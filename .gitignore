@@ -334,3 +334,6 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# OLD files
+.old
