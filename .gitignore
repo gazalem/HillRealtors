@@ -336,4 +336,13 @@ paket-files/
 *.sln.iml
 
 # OLD files
-.old
+*.old
+
+# Zip Files
+*.zip
+
+#ignore folders
+bootstrap-4.5.2/
+
+# Bootstrap icons
+images/bootstrap-icons-1.0.0/
