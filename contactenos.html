@@ -12,7 +12,6 @@
   <!-- Custom Theme -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 
     .navbar-theme {
       /*color: #553C19 !important;*/
@@ -21,9 +20,16 @@
       font-size: 1.2rem;
       text-transform: uppercase;
     }
+    .titulosh1 {
+      text-shadow: 4px 6px 6px #aaa;
+      text-transform:none;
+      font-weight: 300;
+      font-size: 3.5rem;
+      color: rgba(85,60,25,0.9);
+    }
   </style>
   <script src="https://kit.fontawesome.com/c95f589f9a.js" crossorigin="anonymous"></script>
-  <title>Hill Realtors - Su asesor Inmobiliario</title>
+  <title>Hill Realtors | Contáctenos</title>
 </head>
 
 <body>
@@ -66,7 +72,7 @@
   <div class="container-xl">
     <div class="row">
       <div class="col">
-        <h1 class="text-center" style="text-shadow: 4px 6px 6px #aaa;text-transform:none;font-family: Tangerine;font-size: 5em;">Contáctenos</h1>
+        <h1 class="text-center titulosh1">Contáctenos</h1>
       </div>
     </div>
     <br><br><br>
@@ -78,24 +84,25 @@
       </div>
       <div class="col-6">
         <!-- myForm -->
-        <form>
+        <form id="contact-form">
           <div class="form-group">
             <label for="inputName">Nombre</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Nombre Apellido">
+            <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Nombre Apellido" required data-validation-required-message="Escriba su nombre, por favor!">
           </div>
           <div class="form-group">
             <label for="inputCell">Teléfono Móvil</label>
-            <input type="tel" class="form-control" id="inputCell" aria-describedby="cellHelp">
+            <input type="tel" class="form-control" id="inputCell" name="inputCell" aria-describedby="cellHelp" required required data-validation-required-message="Escriba su número de celular, por favor!">
             <small class="form-text text-muted" id="cellHelp">No compartimos su número Celular.</small>
           </div>
           <div class="form-group">
             <label for="inputEmail1">Email</label>
-            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="usuario@sudominio.com">
+            <input type="email" class="form-control" id="inputEmail1" name="inputEmail" required aria-describedby="emailHelp" placeholder="usuario@sudominio.com" required data-validation-required-message="Escriba su correo electrónico, por favor!">
+            <p class="help-control"></p>
             <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo con nadie.</small>
           </div>
           <div class="form-group">
             <label for="formControlTextarea">Mensaje</label>
-            <textarea class="form-control" id="formControlTextarea" rows="5"></textarea>
+            <textarea class="form-control" id="formMessage" name="formMessage" rows="5"></textarea>
           </div>
           <button type="submit" class="btn btn-success">Enviar</button>
         </form>
@@ -103,7 +110,7 @@
     </div>
     <!-- Contact Form -->
   </div>
-  <br>
+  <br><br><br>
   <!-- Footer -->
   <footer class="page-footer font-small blue-grey lighten-5">
     <div style="background-color: #51a131;">
@@ -119,15 +126,15 @@
           <!-- Grid column -->
           <div class="col-md-6 col-lg-7 text-center text-md-right">
             <!-- Facebook -->
-            <a class="fb-ic navbar-theme" style="font-size: 1.6rem;">
+            <a class="fb-ic navbar-theme" style="font-size: 1.6rem;" href="https://www.facebook.com/hillrealtors">
               <i class="fab fa-facebook-f white-text mr-4"> </i>
             </a>
             <!-- Twitter -->
-            <a class="tw-ic navbar-theme" style="font-size: 1.6rem;">
+            <a class="tw-ic navbar-theme" style="font-size: 1.6rem;" href="https://twitter.com/hillrealtors">
               <i class="fab fa-twitter white-text mr-4"> </i>
             </a>
             <!--Instagram-->
-            <a class="ins-ic navbar-theme" style="font-size: 1.6rem;">
+            <a class="ins-ic navbar-theme" style="font-size: 1.6rem;" href="https://www.instagram.com/hillrealtors">
               <i class="fab fa-instagram white-text"> </i>
             </a>
           </div>
@@ -149,59 +156,45 @@
           <!-- Content -->
           <h6 class="text-uppercase font-weight-bold">Hill Realtors</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>Nos especializamos en la consultoría, administración, alquiler y venta de proyectos y propiedades inmobiliarias en Panamá. Adicionalmente y con el fin de brindar una asesoría integral, contamos con una variedad de servicios, tales como, Servicios Legales, Servicios Bancarios y Financieros y Seguros.</p>
+          <p>Nos especializamos en la consultoría, administración, alquiler y venta de proyectos y propiedades inmobiliarias en Panamá. Adicionalmente y con el fin de brindar una asesoría integral, contamos con una variedad de servicios, tales como, Servicios Legales, Seguros, Servicios Bancarios y Financieros.</p>
 
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-5 col-lg-5 col-xl-5mb-4">
 
           <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Mapa del Sitio</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a class="dark-grey-text" href="#!">Nosotros</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" href="#!">Nuestros Agentes</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" href="#!">Propiedades</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" href="#!">Servicios</a>
-          </p>
-          <p>
-            <a href="#" class="dark-grey-text">Contactenos</a>
-          </p>
+          <div class="row">
+            <div class="offset-4 col-md-4 col-lg-4 col-xl-4 d-block justify-content-center">
+              <!-- align here -->
+              <h6 class="text-uppercase font-weight-bold">Mapa del Sitio</h6>
+              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a class="dark-grey-text" href="nosotros.html">Nosotros</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Nuestros Agentes</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Propiedades</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="servicios.html">Servicios</a>
+              </p>
+              <p>
+                <a href="contactenos.html" class="dark-grey-text">Contactenos</a>
+              </p>
+            </div>
+            <!-- <div class="col-md-4 col-lg-4 col-xl-4 d-block justify-content-center">&nbsp;</div> -->
+          </div>
 
         </div>
         <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-          <h6 class="text-uppercase font-weight-bold">Enlaces Útiles</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a class="dark-grey-text" href="https://webmail.hill-realtors.com/">WebMail</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" href="#!">Become an Affiliate</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" href="#!">Shipping Rates</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" href="#!">Ayuda</a>
-          </p>
-
-        </div>
-        <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
 
           <!-- Links -->
           <h6 class="text-uppercase font-weight-bold">Contacto</h6>
@@ -233,6 +226,30 @@
   </footer>
   <!-- Footer -->
 
+  <!-- Modal for Successful email sent -->
+  <!-- Vertically centered modal -->
+  <div class="modal fade" tabindex="-1" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-tittle text-success font-weight-bold">Mensaje Enviado Exitosamente</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./images/Green-Round-Tick.png" alt="Successful" class="mx-auto d-block" style="width: 25%;">
+          <br>
+          <p class="text-center font-weight-bold">Uno de nuestros agentes estará contactándole pronto.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -244,6 +261,28 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.min.js" crossorigin="anonymous"></script>
+  <!-- emailJS functionality -->
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("user_aE8uhHvqVlkY4ngByZzQx");
+    })();
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_4ed4kxd', 'template_z0e2f4g', this)
+          .then(function () {
+            console.log('SUCCESS!');
+            $("#myModal").modal();
+            document.getElementById('contact-form').reset();
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <!-- Required meta tags -->
@@ -9,59 +9,69 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-  <!-- <link rel="stylesheet" href="./css/cover.css"> -->
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- customs styles -->
+  <!-- Custom Theme -->
+  <link rel="stylesheet" href="css/main-old.css">
   <style>
-    html,body {
-      padding-top: 0rem;
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+    .navbar-theme {
+      /*color: #553C19 !important;*/
+      color: rgba(85,60,25,0.9) !important;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+    .titulosh1 {
+      text-shadow: 4px 6px 6px #aaa;
+      text-transform:none;
+      font-weight: 300;
+      font-size: 3.5rem;
+      color: rgba(85,60,25,0.9);
     }
   </style>
-  <title>Hill Realtors - Servicios</title>
+  <script src="https://kit.fontawesome.com/c95f589f9a.js" crossorigin="anonymous"></script>
+  <title>Hill Realtors | Contáctenos</title>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg border-bottom shadow-sm">
-    <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
-      <ul class="navbar-nav ml-auto text-center">
+  <!-- Navbar and social media -->
+  <div class="container-lg sticky-top" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="./images/logo-1.png" alt="" height="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link navbar-theme" href="./index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="nosotros.html">Nosotros</a>
+          <a class="nav-link navbar-theme" href="./nosotros.html">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Propiedades</a>
-        </li>
-      </ul>
-    </div>
-    <div class="mx-auto my-2 order-0 order-md-1 position-relative">
-      <a class="mx-auto" href="./index.html">
-        <img src="./images/small_logo.png">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
-      <ul class="navbar-nav mr-auto text-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="servicios.html">Servicios</a>
+          <a href="#" class="nav-link navbar-theme">Nuestros Agentes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Panama</a>
+          <a class="nav-link navbar-theme" href="#">Propiedades</a>
+        </li>
+        <li class="nav-item active">
+          <a href="./servicios.html" class="nav-link navbar-theme">Servicios <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contactenos</a>
+          <a href="contactenos.html" class="nav-link navbar-theme">Contactenos</a>
         </li>
       </ul>
     </div>
   </nav>
+  </div>
+  <div class="container-fluid shadow-sm">&nbsp;</div>
+  <br>
 
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Servicios</h1>
+    <h1 class="titulosh1 mb-4">Servicios</h1>
     <p class="lead">
       Con el fin de brindar una asesoría integral, contamos con una variedad de servicios; así ayudamos a nuestros clientes, no sólo a tener la mejor experiencia en la compra de su propiedad, sino también a maximizar su inversión.
     </p>
@@ -134,22 +144,133 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
-  <FontIcon FontFamily="Hack Nerd Font" Glyph="&#xE7C4;" />
-  <PathIcon Data="F1 M 12.905273 3.896484 C 12.566731 3.583984 12.192383 3.473308 11.782227 3.564453 C 11.37207 3.6556 10.958658 3.889975 10.541992 4.267578 C 10.476888 4.319662 10.415039 4.375 10.356445 4.433594 C 10.297852 4.492188 10.236002 4.554037 10.170898 4.619141 C 9.819336 4.996745 9.474283 5.445964 9.135742 5.966797 C 8.7972 6.487631 8.487955 7.037761 8.208008 7.617188 C 7.92806 8.196615 7.683919 8.782553 7.475586 9.375 C 7.267252 9.967448 7.111002 10.5306 7.006836 11.064453 C 7.084961 11.233725 7.156575 11.412761 7.22168 11.601563 C 7.286784 11.790365 7.338867 11.962891 7.37793 12.119141 C 7.39095 12.171225 7.400716 12.213542 7.407227 12.246094 C 7.413737 12.278646 7.423502 12.314453 7.436523 12.353516 C 7.449544 12.431641 7.462565 12.49349 7.475586 12.539063 L 7.495117 12.607422 C 7.495117 12.607422 7.488606 12.591146 7.475586 12.558594 C 7.462565 12.526042 7.443034 12.470703 7.416992 12.392578 C 7.416992 12.379558 7.413737 12.366537 7.407227 12.353516 C 7.400716 12.340495 7.397461 12.320964 7.397461 12.294922 C 7.38444 12.294922 7.37793 12.288412 7.37793 12.275391 L 7.37793 12.255859 C 7.325846 12.138672 7.247721 11.988933 7.143555 11.806641 C 7.039388 11.62435 6.961263 11.48112 6.90918 11.376953 C 6.857096 11.520183 6.811523 11.656901 6.772461 11.787109 C 6.733398 11.917318 6.694336 12.047526 6.655273 12.177734 C 6.811523 12.477214 6.938477 12.822266 7.036133 13.212891 L 7.182617 13.798828 L 7.163086 13.730469 C 7.150065 13.684896 7.124023 13.610026 7.084961 13.505859 C 7.045898 13.401693 6.958008 13.229167 6.821289 12.988281 C 6.68457 12.747396 6.59668 12.587891 6.557617 12.509766 C 6.479492 12.783203 6.427409 13.007813 6.401367 13.183594 C 6.375325 13.359375 6.375325 13.466797 6.401367 13.505859 C 6.45345 13.597006 6.502278 13.710938 6.547852 13.847656 C 6.593424 13.984375 6.642252 14.13737 6.694336 14.306641 C 6.785481 14.684245 6.863606 15.052084 6.928711 15.410156 L 7.026367 15.947266 L 7.026367 15.996094 C 7.026367 16.028646 7.026367 16.064453 7.026367 16.103516 C 7.013346 16.416016 7.010091 16.731771 7.016602 17.050781 C 7.023112 17.369791 7.039388 17.672525 7.06543 17.958984 C 7.104492 18.349609 7.150065 18.701172 7.202148 19.013672 C 7.254231 19.326172 7.319336 19.573568 7.397461 19.755859 L 7.514648 19.697266 C 7.397461 19.345703 7.316081 18.945313 7.270508 18.496094 C 7.224935 18.046875 7.215169 17.555338 7.241211 17.021484 C 7.267252 16.214193 7.374674 15.332031 7.563477 14.375 C 7.752278 13.417969 8.01595 12.431641 8.354492 11.416016 C 8.64095 10.647787 8.956705 9.91862 9.301758 9.228516 C 9.64681 8.538412 10.001627 7.906901 10.366211 7.333984 C 10.730794 6.761068 11.105143 6.25 11.489258 5.800781 C 11.873372 5.351563 12.247721 4.983725 12.612305 4.697266 C 12.273763 4.996746 11.915689 5.442709 11.538086 6.035156 C 11.160481 6.627604 10.799153 7.252604 10.454102 7.910156 C 10.109049 8.567709 9.796549 9.205729 9.516602 9.824219 C 9.236653 10.442709 9.031575 10.934245 8.901367 11.298828 C 8.588867 12.119141 8.325195 12.913412 8.110352 13.681641 C 7.895508 14.44987 7.722981 15.205078 7.592773 15.947266 C 7.814127 15.257162 8.185221 14.755859 8.706055 14.443359 L 9.487305 13.974609 L 9.956055 13.378906 C 10.268555 12.981771 10.633138 12.464193 11.049805 11.826172 C 10.802408 11.891276 10.509439 11.966146 10.170898 12.050781 C 9.832356 12.135417 9.591471 12.203776 9.448242 12.255859 C 9.239908 12.347006 9.103189 12.408854 9.038086 12.441406 L 8.94043 12.490234 L 9.731445 12.041016 C 10.258789 11.741537 10.808919 11.500651 11.381836 11.318359 C 11.759439 10.706381 12.133789 10.048828 12.504883 9.345703 C 12.875977 8.642578 13.162435 7.949219 13.364258 7.265625 C 13.56608 6.582031 13.647461 5.944011 13.608398 5.351563 C 13.569336 4.759115 13.334961 4.274089 12.905273 3.896484 Z " VerticalAlignment="Center" HorizontalAlignment="Center" />
+  <br><br><br>
+  <!-- Footer -->
+  <footer class="page-footer font-small blue-grey lighten-5">
+    <div style="background-color: #51a131;">
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h5 class="mb-0">Contáctenos en nuestras redes sociales</h5>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <!-- Facebook -->
+            <a class="fb-ic navbar-theme" style="font-size: 1.6rem;" href="https://www.facebook.com/hillrealtors">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic navbar-theme" style="font-size: 1.6rem;" href="https://twitter.com/hillrealtors">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic navbar-theme" style="font-size: 1.6rem;" href="https://www.instagram.com/hillrealtors">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3 dark-grey-text">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Hill Realtors</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Nos especializamos en la consultoría, administración, alquiler y venta de proyectos y propiedades inmobiliarias en Panamá. Adicionalmente y con el fin de brindar una asesoría integral, contamos con una variedad de servicios, tales como, Servicios Legales, Seguros, Servicios Bancarios y Financieros.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-5 col-xl-5mb-4">
+
+          <!-- Links -->
+          <div class="row">
+            <div class="offset-4 col-md-4 col-lg-4 col-xl-4 d-block justify-content-center">
+              <!-- align here -->
+              <h6 class="text-uppercase font-weight-bold">Mapa del Sitio</h6>
+              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a class="dark-grey-text" href="nosotros.html">Nosotros</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Nuestros Agentes</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Propiedades</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="servicios.html">Servicios</a>
+              </p>
+              <p>
+                <a href="contactenos.html" class="dark-grey-text">Contactenos</a>
+              </p>
+            </div>
+            <!-- <div class="col-md-4 col-lg-4 col-xl-4 d-block justify-content-center">&nbsp;</div> -->
+          </div>
+
+        </div>
+        <!-- Grid column -->
 
 
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"></script>
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> Condado del Rey, Panamá</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@hill-realtors.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 507 830 7578</p>
+          <p>
+            <i class="fas fa-mobile-alt mr-3"></i> + 507 6678 7616</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+      <a class="dark-grey-text" href="https://www.hill-realtors.com/"> hill-realtors.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
